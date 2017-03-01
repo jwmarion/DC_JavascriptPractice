@@ -5,24 +5,26 @@ function ttt(board){
       return (board[x][0] + " wins!");
     }
     if(board[0][x] == board[1][x] && board[1][x] == board[2][x]){
-      return (board[0][x] + " wins!")
+      return (board[0][x] + " wins!");
     }
-    if (board[0][0] == board[1][1] && board[0][0] == board[2][2]){
-      return (board[0][0] + " wins!");
-    }
-    else if (board[0][2] == board[1][1] && board[0][0] == board[2][0]){
-      return (board[0][0] + " wins!");
-    }
-    else{
-      return "Draw!";
-    }
+  }
+
+  if (board[0][0] == board[1][1] && board[0][0] == board[2][2]){
+    return (board[0][0] + " wins!");
+  }
+  else if (board[0][2] == board[1][1] && board[0][0] == board[2][0]){
+    return (board[0][0] + " wins!");
+  }
+  else{
+    return "Draw!";
   }
 }
 
 
+
 b = ([
-  ['X', 'X', 'O'],
-  ['O', 'O', null],
+  ['O', 'X', 'O'],
+  ['O', 'X', null],
   [null, 'X', 'O']
 ]);
 
