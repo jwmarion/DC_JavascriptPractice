@@ -5,7 +5,6 @@ function ttt(board){
   var ry = 0;
   var rz = 0;
   var rn = 0;
-
   // get x and y values for rows
   for (var x = 0; x<board.length; x++){
     for (var y = 0; y<board.length; y++){
@@ -13,7 +12,7 @@ function ttt(board){
         rx += checkResult(x,y,board);
         ry += checkResult(y,x, board);
       }
-
+      
   //checks diags. This only needs to run in the outer loop.
   rz += checkResult(x,x,board);
   rn += checkResult(x,(board.length - 1) - x, board);
@@ -32,7 +31,6 @@ function ttt(board){
   //only runs if loops are not broken, thus no winnders.
   return ("Draw!");
 }
-
 //returns a -1 if an O is in a spot, and 1 if X is in a spot
 function checkResult(a,b,item){
   if (item[a][b] == 'O'){
@@ -55,7 +53,7 @@ var b = ([
 
 var c = ([
   ['X', 'X', 'O'],
-  [null, 'O', null],
+  [null, 'X', null],
   ['O', 'X', 'O']]);
 
 //runs tictactoe tester
