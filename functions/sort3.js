@@ -1,22 +1,24 @@
-// var arr = [
-//   [1, 3, 4],
-//   [2, 4, 6, 8],
-//   [3, 6]
-// ];
-// Sort the array by the sum of each inner array. For the above example, the respective sums for each inner array is 8, 20, and 9. Therefore, the solution should be:
+// Sort an array, 3
 //
-// [
-//   [1, 3, 4],
-//   [3, 6],
-//   [2, 4, 6, 8]
-// ]
+// Given an array of array of products:
+//
+// var products = [
+//   { name: 'Basketball', price: 12.00 },
+//   { name: 'Tennis Racquet', price: 66.00 },
+//   { name: 'Tennis Balls', price: 9.00 },
+//   { name: 'Tennis Balls', price: 9.00 }
+// ];
+// Sort the array by price.
 
-
-var arr = [
-  [1, 3, 4],
-  [2, 4, 6, 8],
-  [3, 6]
+var products = [
+  { name: 'Basketball', price: 12.00 },
+  { name: 'Tennis Racquet', price: 66.00 },
+  { name: 'Tennis Balls', price: 9.00 },
+  { name: 'Tennis Balls', price: 9.00 }
 ];
 
+products.sort(function(a,b) {
+  return a.price-b.price;
+});
 
-r = arr.forEach(fuction(function())
+console.log(products);

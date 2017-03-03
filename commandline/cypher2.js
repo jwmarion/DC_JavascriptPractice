@@ -11,6 +11,6 @@ function cypher2(text){
   return list;
 }
 
-var text="abc";
+var text="frperg";
 
 console.log(cypher2(text));
