@@ -42,8 +42,8 @@ function wordHistogram(entry){
     }
   }
 
-console.log("Most used letter: " + biggy + ":" + ldict[biggy]);
-console.log("Second most used letter: " + smalls + ":" + ldict[smalls]);
+console.log("Most used letter: " + biggy + " : " + ldict[biggy]);
+console.log("Second most used letter: " + smalls + " : " + ldict[smalls]);
   for(var word in dict){
     console.log(word + ": " + dict[word]);
   }
